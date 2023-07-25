@@ -51,7 +51,9 @@ class MarsViewModel : ViewModel() {
                 val listResult = MarsApi.retrofitService.getPhotos()
                 //Na documentación pon que pódese omitir a asignación de variable
                 //pero é mentira
-                marsUiState = MarsUiState.Success(listResult)
+                marsUiState = MarsUiState.Success(
+                    "Success: ${listResult.size} Mars photos retrieved"
+                )
             }
             catch (e: IOException) {
                 //Na documentación pon que pódese omitir a asignación de variable
