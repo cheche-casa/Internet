@@ -87,6 +87,7 @@ dependencies {
 
     // Kotlin serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.11")
 
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation("androidx.compose.ui:ui-tooling")
